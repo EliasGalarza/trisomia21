@@ -51,8 +51,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- REQUIRED SCRIPTS -->
 
-<script src="{{ asset('js/app.js') }}"></script>
-
 <!-- jQuery -->
 <script src="{{ asset('dashboard/plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
@@ -60,7 +58,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- AdminLTE App -->
 <script src="{{ asset('dashboard/dist/js/adminlte.min.js') }}"></script>
 
-
+<script src="{{ asset('toastr/toastr.js') }}"></script>
 
 <!-- Select2 js -->
 <script src="{{ asset('select2/select2.js') }}"></script>
@@ -70,6 +68,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         $('.js-example-basic-multiple').select2();
     });
 </script>
+
+
 
 {!! toastr()->render() !!}
 </body>

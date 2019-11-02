@@ -75,3 +75,38 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('pensiones', 'Admin\PensionsController');
 Route::resource('obrassociales', 'Admin\HealthinsurancesController');
 Route::post('buscar', 'Admin\PensionsController@buscar')->name('buscar');
+
+
+// Rutas para la web
+
+Route::get('index', function () {
+    return view('web.index');
+});
+Route::get('single', function () {
+    return view('web.Posts.single');
+});
+Route::get('posts', function () {
+    return view('web.Posts.posts');
+});
+
+Route::get('forms', function () {
+    return view('web.Forms.forms');
+});
+Route::get('history', function () {
+    return view('web.Info.history');
+});
+Route::get('members', function () {
+    return view('web.Info.members');
+});
+Route::get('syndrome', function () {
+    return view('web.syndrome.syndrome');
+});
+Route::get('contact', function () {
+    return view('web.Contact.contact');
+});
+Route::get('activities', function () {
+    return view('web.Activities.activities');
+});
+// Route::get('post', 'Web/PostsController@post')->name('post');
+
+// Rutas para la web
